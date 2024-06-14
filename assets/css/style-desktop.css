@@ -1,0 +1,243 @@
+/* COLORS VARIABLES */
+:root {
+    /* fonts color */
+    --body-font-color: #393d41;
+    --body-headings-font-color: #25a2c3;
+    --body-button-font-color: #fff;
+    --body-punchline-font-color: #fff;
+    --body-cards-border-color: #dee1e3;
+    --footer-font-color: #c8e7f0;
+    --footer-headings-font-color: #fff;
+    --footer-link-color: #c8e7f0;
+
+    /* containers color */
+    --header-bgcolor: #131313;
+    --button-bgcolor: #f04c2f;
+    --punchline-bgcolor: #e22d0e;
+    --footer-bgcolor: #25a2c3;
+}
+
+/********************************************/
+
+/* DEFAULT BEHAVIOR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+}
+
+.container-small {
+    width: 50%;
+}
+
+
+/********************************************/
+
+/* SELECTOR GROUPS */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--body-headings-font-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.web-dev-course-container .contact-us-anchor {
+    font-family: 'Montserrat', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6 {
+    color: var(--footer-headings-font-color)
+}
+
+.container,
+.container-small,
+footer .copyright-container,
+footer .contacts-container,
+.contacts-container .contacts-container-paragraphs
+{
+    display: block;
+    margin: 0 auto;
+}
+
+.course-description-container,
+.web-dev-course-container {
+    padding: 8em 0;
+
+}
+
+.course-description-container *,
+footer .contacts-container p{
+    text-align: start;
+}
+
+header .header-logo img,
+footer .copyright-container {
+    width: 50%;
+}
+
+.punchline,
+.step-cards-container,
+footer {
+    padding: 3em 0;
+}
+
+.course-description-container dd:not(:last-child),
+.card,
+.card>* {
+    margin-bottom: 2em;
+}
+
+.web-dev-course-container .container-small>*:not(:last-child),
+.punchline h2,
+.punchline blockquote>*,
+footer .contact-us>* {
+    margin-bottom: 1em;
+}
+
+.card,
+.web-dev-course-container .contact-us-anchor {
+    border-radius: 5px;
+}
+
+.contacts-container .contacts-container-paragraphs,
+.contacts-container {
+    width: fit-content;
+}
+
+/********************************************/
+
+/* BODY STYLE */
+body {
+    font-family: 'Open Sans', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    color: var(--body-font-color);
+    font-size: 1.2rem;
+    line-height: 1.65em;
+}
+
+/********************************************/
+
+/* HEADER SECTION */
+header {
+    background-color: var(--header-bgcolor);
+    padding: 2em;
+}
+
+header .header-logo img{
+    display: block;
+    width: 15%;
+}
+
+
+/********************************************/
+
+/* WEB DEV COURSE BANNER SECTION  */
+
+.web-dev-course-container {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.web-dev-course-container .contact-us-anchor {
+    color: var(--body-button-font-color);
+    display: inline-block;
+    background-color: var(--button-bgcolor);
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+/********************************************/
+
+/* COURSE DESCRIPTION SECTION */
+
+.course-description-container .course-description-img img {
+    border-radius: 50%;
+}
+
+.course-description-container>* {
+    display: inline-block;
+    width: 48%;
+}
+
+/********************************************/
+
+/* PUNCHLINE BANNER */
+.punchline {
+    background-color: var(--punchline-bgcolor);
+    color: var(--body-punchline-font-color);
+}
+
+.punchline h2 {
+    color: inherit;
+}
+
+.punchline blockquote cite p:last-child{
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: 100;
+}
+
+/********************************************/
+
+/* STEP CARDS SECTION */
+.card {
+    display: inline-block;
+    width: calc(33% - 10px);
+    margin: 5px;
+    border: 2px solid var(--body-cards-border-color);
+}
+
+.card .card-image-container{
+    height: 50%;
+}
+
+.card img {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+
+.card dl{
+    padding: 0 5px;
+}
+
+/********************************************/
+
+/* FOOTER */
+footer {
+    background-color: var(--footer-bgcolor);
+    color: var(--footer-font-color);
+}
+
+footer a {
+    color: var(--footer-link-color);
+}
+
+.contacts-container{
+    border-bottom: 1px solid var(--footer-font-color);
+    padding-bottom: 2em;
+}
+
