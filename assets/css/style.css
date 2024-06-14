@@ -11,15 +11,15 @@
     --footer-link-color: #c8e7f0;
 
     /* containers color */
-    --header-bgcolor: #000;
+    --header-bgcolor: #131313;
     --button-bgcolor: #f04c2f;
     --punchline-bgcolor: #e22d0e;
     --footer-bgcolor: #25a2c3;
 }
 
+/********************************************/
 
-
-
+/* DEFAULT BEHAVIOR */
 * {
     margin: 0;
     padding: 0;
@@ -27,12 +27,14 @@
     text-align: center;
 }
 
-body {
-    font-family: 'Open Sans', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
-    color: var(--body-font-color);
-    font-size: 1.2rem;
-    line-height: 1.65em;
+.container {
+    width: 80%;
 }
+
+
+/********************************************/
+
+/* SELECTOR GROUPS */
 
 h1,
 h2,
@@ -40,8 +42,17 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
     color: var(--body-headings-font-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.web-dev-course-container .contact-us-anchor {
+    font-family: 'Montserrat', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
     font-weight: bold;
     line-height: 1.5em;
 }
@@ -55,18 +66,11 @@ footer h6 {
     color: var(--footer-headings-font-color)
 }
 
-
-.container {
+.container,
+header .header-logo img,
+footer .copyright-container {
     display: block;
     margin: 0 auto;
-    width: 80%;
-}
-
-/********************************************/
-
-/* HEADER SECTION */
-header {
-    background-color: var(--header-bgcolor);
 }
 
 header,
@@ -77,9 +81,49 @@ header,
 
 header .header-logo img,
 footer .copyright-container {
-    display: block;
-    margin: 0 auto;
     width: 50%;
+}
+
+.course-description-container,
+.punchline,
+.step-cards-container,
+footer {
+    padding: 2em 0;
+}
+
+.course-description-container dd:not(:last-child),
+.course-description-container .course-description-img-container,
+.card,
+.card>* {
+    margin-bottom: 2em;
+}
+
+.web-dev-course-container .container>*:not(:last-child),
+.punchline h2,
+.punchline blockquote>*,
+footer .contact-us>* {
+    margin-bottom: 1em;
+}
+
+.card,
+.web-dev-course-container .contact-us-anchor {
+    border-radius: 5px;
+}
+/********************************************/
+
+/* BODY STYLE */
+body {
+    font-family: 'Open Sans', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    color: var(--body-font-color);
+    font-size: 1.2rem;
+    line-height: 1.65em;
+}
+
+/********************************************/
+
+/* HEADER SECTION */
+header {
+    background-color: var(--header-bgcolor);
 }
 
 /********************************************/
@@ -93,40 +137,18 @@ footer .copyright-container {
     background-repeat: no-repeat;
 }
 
-.web-dev-course-container .container>* {
-    margin-top: 1.5em;
-}
 
 .web-dev-course-container .contact-us-anchor {
     color: var(--body-button-font-color);
     display: inline-block;
     background-color: var(--button-bgcolor);
-    border-radius: 5px;
     padding: 10px 30px;
-    font-family: 'Montserrat', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
-    color: var(--body-button-font-color);
-    font-weight: bold;
-    line-height: 1.5em;
     text-decoration: none;
 }
 
 /********************************************/
 
 /* COURSE DESCRIPTION SECTION */
-
-.course-description-container,
-.punchline,
-.step-cards-container,
-footer {
-    padding: 2em 0;
-}
-
-.course-description-container dd:not(:last-child),
-.course-description-container .course-description-img-container,
-.card,
-.card>*{
-    margin-bottom: 2em;
-}
 
 .course-description-container .course-description-img-container img {
     border-radius: 50%;
@@ -144,18 +166,11 @@ footer {
     color: inherit;
 }
 
-.punchline h2,
-.punchline blockquote>*,
-footer .contact-us>*  {
-    margin-bottom: 1em;
-}
-
 /********************************************/
 
 /* STEP CARDS SECTION */
 .card {
     border: 2px solid var(--body-cards-border-color);
-    border-radius: 5px;
 }
 
 .card img {
@@ -166,17 +181,16 @@ footer .contact-us>*  {
 /********************************************/
 
 /* FOOTER */
-footer{
+footer {
     background-color: var(--footer-bgcolor);
     color: var(--footer-font-color);
 }
 
-footer a{
+footer a {
     color: var(--footer-link-color);
 }
 
-footer .copyright-container{
+footer .copyright-container {
     width: fit-content;
     border-top: 1px solid var(--footer-font-color);
 }
-
