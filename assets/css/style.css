@@ -2,6 +2,7 @@
     /* fonts color */
     --body-font-color: #393d41;
     --body-headings-font-color: #25a2c3;
+    --body-button-font-color: #fff;
     --footer-font-color: #c8e7f0;
     --footer-headings-font-color: #fff;
     --footer-link-color: #c8e7f0;
@@ -17,6 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 body {
@@ -37,7 +39,6 @@ h6 {
     color: var(--body-headings-font-color);
     font-weight: bold;
     line-height: 1.5em;
-    color: var(--body-headings-font-color)
 }
 
 footer h1,
@@ -49,13 +50,44 @@ footer h6 {
     color: var(--footer-headings-font-color)
 }
 
-header{
+header {
     background-color: var(--header-bgcolor);
     padding: 3em 0;
 }
 
-header .header-logo img{
+header .header-logo img {
     display: block;
     margin: 0 auto;
     width: 50%;
+}
+
+.web-dev-course-container {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px 0;
+}
+
+.web-dev-course-container .container>* {
+    margin-top: 1.5em;
+}
+
+.web-dev-course-container .contact-us-anchor {
+    color: var(--body-button-font-color);
+    display: inline-block;
+    background-color: var(--button-bgcolor);
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-family: 'Montserrat', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    color: var(--body-button-font-color);
+    font-weight: bold;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
 }
