@@ -5,6 +5,7 @@
     --body-headings-font-color: #25a2c3;
     --body-button-font-color: #fff;
     --body-punchline-font-color: #fff;
+    --body-cards-border-color: #dee1e3;
     --footer-font-color: #c8e7f0;
     --footer-headings-font-color: #fff;
     --footer-link-color: #c8e7f0;
@@ -66,7 +67,12 @@ footer h6 {
 /* HEADER SECTION */
 header {
     background-color: var(--header-bgcolor);
+}
+
+header,
+.web-dev-course-container {
     padding: 3em 0;
+
 }
 
 header .header-logo img {
@@ -84,7 +90,6 @@ header .header-logo img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px 0;
 }
 
 .web-dev-course-container .container>* {
@@ -109,33 +114,48 @@ header .header-logo img {
 /* COURSE DESCRIPTION SECTION */
 
 .course-description-container,
-.punchline{
+.punchline,
+.step-cards-container {
     padding: 2em 0;
 }
 
 .course-description-container dd:not(:last-child),
-.course-description-container .course-description-img-container
-{
+.course-description-container .course-description-img-container,
+.card,
+.card>* {
     margin-bottom: 2em;
 }
 
-.course-description-container .course-description-img-container img{
+.course-description-container .course-description-img-container img {
     border-radius: 50%;
 }
 
 /********************************************/
 
 /* PUNCHLINE BANNER */
-.punchline{
+.punchline {
     background-color: var(--punchline-bgcolor);
     color: var(--body-punchline-font-color);
 }
 
-.punchline h2{
+.punchline h2 {
     color: inherit;
 }
 
 .punchline h2,
-.punchline blockquote>*{
+.punchline blockquote>* {
     margin-bottom: 1em;
+}
+
+/********************************************/
+
+/* STEP CARDS SECTION */
+.card {
+    border: 2px solid var(--body-cards-border-color);
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    display: block;
 }
