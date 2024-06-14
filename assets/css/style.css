@@ -1,3 +1,4 @@
+/* COLORS VARIABLES */
 :root {
     /* fonts color */
     --body-font-color: #393d41;
@@ -14,6 +15,9 @@
     --footer-bgcolor: #25a2c3;
 }
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +27,6 @@
 
 body {
     font-family: 'Open Sans', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
-    ;
     color: var(--body-font-color);
     font-size: 1.2rem;
     line-height: 1.65em;
@@ -50,6 +53,16 @@ footer h6 {
     color: var(--footer-headings-font-color)
 }
 
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/********************************************/
+
+/* HEADER SECTION */
 header {
     background-color: var(--header-bgcolor);
     padding: 3em 0;
@@ -60,6 +73,10 @@ header .header-logo img {
     margin: 0 auto;
     width: 50%;
 }
+
+/********************************************/
+
+/* WEB DEV COURSE BANNER SECTION  */
 
 .web-dev-course-container {
     background-image: url('../img/banner.jpg');
@@ -86,8 +103,19 @@ header .header-logo img {
     text-decoration: none;
 }
 
-.container {
-    display: block;
-    margin: 0 auto;
-    width: 90%;
+/********************************************/
+
+/* COURSE DESCRIPTION SECTION */
+
+.course-description-container{
+    padding: 2em 0;
+}
+
+.course-description-container dd:not(:last-child),
+.course-description-container .course-description-img-container{
+    margin-bottom: 2em;
+}
+
+.course-description-container .course-description-img-container img{
+    border-radius: 50%;
 }
