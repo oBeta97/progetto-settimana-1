@@ -31,7 +31,8 @@
     width: 80%;
 }
 
-.container-small {
+.container-small,
+header .header-logo img {
     width: 50%;
 }
 
@@ -91,10 +92,6 @@ footer .contacts-container p{
     text-align: start;
 }
 
-header .header-logo img,
-footer .copyright-container {
-    width: 50%;
-}
 
 .punchline,
 .step-cards-container,
@@ -123,6 +120,13 @@ footer .contact-us>* {
 .contacts-container .contacts-container-paragraphs,
 .contacts-container {
     width: fit-content;
+}
+
+.web-dev-course-container .contact-us-anchor,
+.course-description-container>*,
+.card
+{
+    display: inline-block;
 }
 
 /********************************************/
@@ -160,10 +164,8 @@ header .header-logo img{
     background-repeat: no-repeat;
 }
 
-
 .web-dev-course-container .contact-us-anchor {
     color: var(--body-button-font-color);
-    display: inline-block;
     background-color: var(--button-bgcolor);
     padding: 10px 30px;
     text-decoration: none;
@@ -178,7 +180,6 @@ header .header-logo img{
 }
 
 .course-description-container>* {
-    display: inline-block;
     width: 48%;
 }
 
@@ -204,7 +205,6 @@ header .header-logo img{
 
 /* STEP CARDS SECTION */
 .card {
-    display: inline-block;
     width: calc(33% - 10px);
     margin: 5px;
     border: 2px solid var(--body-cards-border-color);
