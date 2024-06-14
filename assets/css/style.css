@@ -166,6 +166,10 @@ header {
     color: inherit;
 }
 
+.punchline blockquote p{
+    font-style: italic;
+}
+
 /********************************************/
 
 /* STEP CARDS SECTION */

@@ -201,6 +201,10 @@ header .header-logo img{
     font-weight: 100;
 }
 
+.punchline blockquote p{
+    font-style: italic;
+}
+
 /********************************************/
 
 /* STEP CARDS SECTION */
